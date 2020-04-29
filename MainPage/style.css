@@ -41,6 +41,7 @@ header {
   transition: all 0.3 ease 0s;
 }
 
+
 button {
   background-color: #2e2e2e;
   padding: 9px 25px;
@@ -58,4 +59,14 @@ button:hover {
 
 .white {
   color: white;
+}
+
+.webdev {
+  display: block;
+  width: 0 auto;
+  transform: translate(45%, 50%);
+}
+
+.authorinfo {
+  
 }
