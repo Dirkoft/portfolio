@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -61,12 +63,33 @@ button:hover {
   color: white;
 }
 
+.align {
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
 .webdev {
-  display: block;
-  width: 0 auto;
-  transform: translate(45%, 50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.webdev .authorpres {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 20px;
 }
 
 .authorinfo {
-  
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.authorinfo h3, h4 {
+  font-weight: 400;
 }
