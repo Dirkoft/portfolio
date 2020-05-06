@@ -1,25 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #fffaf0;
+  background-color: #fff;
 }
 
-a, .about {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .nav a {;
+    margin: 10px;
+    transition: all .5s ease;
+    box-shadow: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
 
-.about:hover {
+  .nav a h3 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    font-weight: 300;
+    color: black;
+  }
+
+.nav a h3:hover {
   transform: scale(1.1);
+  box-shadow: none;
 }
 
 header {
@@ -43,7 +53,12 @@ header {
   margin: 10px;
 }
 
-.authorinfo {
+.webdev .authorinfo h2 {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+.authorinfo h3, h4  {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
@@ -61,11 +76,6 @@ header {
   font-weight: 400;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
 section {
   padding: .2rem 0;
   background-color: #fff;
@@ -73,13 +83,19 @@ section {
 
 .heading {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   margin-right: -3px;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
   color: #333;
   position: relative;
+}
+
+.container .heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .heading::after {
@@ -102,6 +118,7 @@ section {
 
 .card {
   width: 32rem;
+  background-color: #ebeef8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,15 +139,21 @@ section {
   font-size: 2.5rem;
   color: #333;
   margin: 1.5rem 0;
+  background-color: inherit;
 }
 
 .aboutMyWork {
+  background-color: inherit;
   font-size: 1.5rem;
   margin: 1.5rem;
   font-style: italic;
   text-align: center;
   color: #333;
 }
+
+  a {
+    background-color: inherit;
+  }
 
 .button {
   padding: 1rem 2.5rem;
