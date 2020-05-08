@@ -102,14 +102,14 @@ section {
 
 .container .heading {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .heading::after {
   content: '';
   width: 9rem;
   height: 0.3rem;
-  background-color: #45e19f;
+  background-color: #1e90ff;
   position: absolute;
   bottom: -.3rem;
   left: 50%;
@@ -141,7 +141,7 @@ section {
   align-items: center;
   justify-content: center;
   width: 26%;
-  background-image: url(pictures/hack.jpeg);
+  background-image: url(pictures/design.jpg);
   background-size: cover;
   box-shadow: .1rem .1rem 1rem rgba(0,0,0,.6);
   margin: 1rem;
@@ -187,7 +187,7 @@ section {
   font-weight: 400;
   font-size: 1rem;
   padding: .2rem;
-  margin: .5rem;
+  margin: .5rem .5rem .5rem .2rem;
   background: none;
   text-align: center;
   text-transform: uppercase;
@@ -270,6 +270,13 @@ footer ul .fab:hover {
   transform: scale(1.1);
 }
 
+.contactbtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .fa-facebook-square {
   color: #3B5999
 }
@@ -278,8 +285,13 @@ footer ul .fab:hover {
   color: #55acee;
 }
 
-.fa-instagram {
-  color: #e6683c;
+.fa-github-square {
+  color: #2C3A47;
+}
+
+.fa-address-card {
+  font-size: 2rem;
+  color: #2C3A47;
 }
 
 @media screen and (min-width: 700px) {
