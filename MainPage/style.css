@@ -8,11 +8,14 @@
 
   .nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
   }
 
   .nav a {;
-    margin: 10px;
+    margin: 5px;
     transition: all .5s ease;
     box-shadow: none;
     letter-spacing: 1px;
@@ -65,7 +68,7 @@ header {
 
 .authorinfo::after {
   content: '';
-  width: 12rem;
+  width: 10rem;
   height: .3rem;
   background-color: #1e90ff;
   position: absolute;
@@ -128,11 +131,12 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 26%;
+  width: 80%;
   background-image: url(pictures/samples.jpeg);
   background-size: cover;
   box-shadow: .1rem .1rem 1rem rgba(0,0,0,.6);
   margin: 1rem;
+  text-indent: 25px;
 }
 
 .card2 {
@@ -140,11 +144,12 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 26%;
-  background-image: url(pictures/design.jpg);
+  width: 80%;
+  background-image: url(pictures/sprache.jpeg);
   background-size: cover;
   box-shadow: .1rem .1rem 1rem rgba(0,0,0,.6);
   margin: 1rem;
+  text-indent: 25px;
 }
 
 .card3 {
@@ -152,11 +157,12 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 26%;
+  width: 80%;
   background-image: url(pictures/backend.jpeg);
   background-size: cover;
   box-shadow: .1rem .1rem 1rem rgba(0,0,0,.6);
-  margin: 1rem;
+  margin: 1rem 1.5rem 1rem 1.5rem;
+  text-indent: 25px;
 }
 
 .card1 h1, .card2 h1, .card3 h1 {
@@ -185,7 +191,7 @@ section {
 .btn {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: .2rem;
   margin: .5rem .5rem .5rem .2rem;
   background: none;
@@ -248,6 +254,7 @@ footer h2 {
   font-weight: 300;
   font-size: 2rem;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 1rem;
 }
 
@@ -259,7 +266,7 @@ footer ul {
 
 footer ul li {
   margin: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 footer ul .fab {
@@ -290,11 +297,20 @@ footer ul .fab:hover {
 }
 
 .fa-address-card {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #2C3A47;
 }
 
 @media screen and (min-width: 700px) {
+
+  .nav a {
+    margin: 10px;
+  }
+  
+  .authorinfo::after {
+  width: 12rem;
+  }
+
   .cardwrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -304,7 +320,28 @@ footer ul .fab:hover {
 
   .card1, .card2, .card3{
     margin: 2rem;
+    width: 26%;
     transition: transform .5s;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  footer ul li {
+  font-size: 2.5rem;
+  }
+
+  .fa-address-card {
+    font-size: 2rem;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: none;
   }
 
   @keyframes fadeIn {
