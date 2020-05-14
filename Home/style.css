@@ -76,8 +76,9 @@ section {
   background: none;
 }
 
-.author {
-  background: none;
+.webdev {
+  border-top: 1px solid rgba(0,0,0,.4);
+  border-bottom: 1px solid rgba(0,0,0,.4);
 }
 
 .author .webdev {
@@ -92,14 +93,20 @@ section {
   width: 100px;
   border-radius: 100%;
   margin: 10px;
+  animation-name: intro;
+  animation-duration: 3s;
+}
+
+.author .webdev .authorinfo {
+  animation: intro2 2s 1;
 }
 
 .author .webdev .authorinfo h2 {
   font-family: 'Poppins';
-  font-weight: 400;
+  font-weight: 600;
 }
 
-.author .authorinfo h3, h4  {
+.author .authorinfo h4  {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   left: 0;
@@ -107,6 +114,15 @@ section {
 
 .author .authorinfo h4 {
   font-weight: 400;
+}
+
+@keyframes intro {
+  from {
+    margin-right: 55px;
+  }
+  to {
+    margin-right: 10px;
+  }
 }
 
 .about {
@@ -131,7 +147,7 @@ section {
 }
 
 .aboutwrap:hover {
-  box-shadow: .2rem .3rem .5rem rgba(0,0,0,.5);
+  box-shadow: .2rem .3rem .5rem rgba(0,0,0,.3);
 }
 
 .about h2 {
@@ -140,6 +156,31 @@ section {
   font-size: 2rem;
   text-transform: uppercase;
   margin-bottom: 4rem;
+  background: none;
+  position: relative;
+  width: 700px;
+}
+
+.about h2::before {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  position: absolute;
+  background: rgba(0,0,0,.5);
+  left: 0;
+  top: 50%;
+}
+
+.about h2::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  position: absolute;
+  background: rgba(0,0,0,.5);
+  right: 0;
+  top: 50%;
 }
 
 .about p {
@@ -147,6 +188,7 @@ section {
   font-weight: 300;
   font-size: 1rem;
   margin: .5rem 2rem;
+  background: none;
 }
 
 .projects {
