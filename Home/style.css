@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #fff;
+    background-image: url('pictures/boat.jpg');
+    background-position: center;
+    background-size: cover;
   }
 
   body {
@@ -25,7 +27,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
-    background: rgba(255,255,255,0.7);
+    background: none;
   }
 
   .navbar ul {
@@ -71,12 +73,18 @@ section {
   justify-content: center;
   align-items: center;
   scroll-snap-align: center;
+  background: none;
+}
+
+.author {
+  background: none;
 }
 
 .author .webdev {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background: none;
 }
 
 .author .webdev .authorpres {
@@ -106,6 +114,24 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: none;
+}
+
+.aboutwrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,.5);
+  box-shadow: .2rem .1rem .3rem rgba(0,0,0,.5);
+  padding: 5rem 2rem;
+  transition: all .4s ease;
+  background: none;
+}
+
+.aboutwrap:hover {
+  box-shadow: .2rem .3rem .5rem rgba(0,0,0,.5);
 }
 
 .about h2 {
@@ -113,6 +139,7 @@ section {
   font-weight: 400;
   font-size: 2rem;
   text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
 .about p {
@@ -126,6 +153,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: none;
 }
 
 .projects h1 {
@@ -142,6 +170,7 @@ section {
   align-content: center;
   margin-top: 1.5rem;
   padding-top: 2rem;
+  background: none;
 }
 
 .footer h2 {
@@ -151,6 +180,7 @@ section {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1rem;
+  background: none;
 }
 
 .footer ul {
@@ -158,11 +188,13 @@ section {
   flex-direction: row;
   list-style: none;
   margin-bottom: 2rem;
+  background: none;
 }
 
 .footer ul li {
   margin: 10px;
   font-size: 2.5rem;
+  background: none;
 }
 
 .footer ul .fab {
@@ -174,20 +206,24 @@ section {
 }
 
 .fa-facebook-square {
-  color: #3B5999
+  color: #3B5999;
+  background: none;
 }
 
 .fa-twitter-square {
   color: #55acee;
+  background: none;
 }
 
 .fa-github-square {
   color: #2C3A47;
+  background: none;
 }
 
 .fa-address-card {
   font-size: 2rem;
   color: #2C3A47;
+  background: none;
 }
 
 .contactbtn {
@@ -195,6 +231,7 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background: none;
 }
 
 .btn {
