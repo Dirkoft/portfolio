@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url('pictures/boat.jpg');
-    background-position: center;
-    background-size: cover;
   }
 
   body {
   height: 100vh;
   overflow: hidden;
+  background-image: url('pictures/boat.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -57,7 +57,6 @@
 
   .navbar ul li {
     transition: all .5s ease;
-    background: none;
   }
 
   .navbar ul li:hover {
@@ -73,7 +72,6 @@ section {
   justify-content: center;
   align-items: center;
   scroll-snap-align: center;
-  background: none;
 }
 
 .webdev {
@@ -85,7 +83,6 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: none;
 }
 
 .author .webdev .authorpres {
@@ -97,22 +94,18 @@ section {
   animation-duration: 3s;
 }
 
-.author .webdev .authorinfo {
-  animation: intro2 2s 1;
-}
-
 .author .webdev .authorinfo h2 {
   font-family: 'Poppins';
   font-weight: 600;
 }
 
-.author .authorinfo h4  {
+.author .authorinfo h3  {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   left: 0;
 }
 
-.author .authorinfo h4 {
+.author .authorinfo h3 {
   font-weight: 400;
 }
 
@@ -130,7 +123,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: none;
 }
 
 .aboutwrap {
@@ -143,7 +135,6 @@ section {
   box-shadow: .2rem .1rem .3rem rgba(0,0,0,.5);
   padding: 5rem 2rem;
   transition: all .4s ease;
-  background: none;
 }
 
 .aboutwrap:hover {
@@ -191,14 +182,12 @@ section {
   font-weight: 300;
   font-size: 1rem;
   margin: .5rem 2rem;
-  background: none;
 }
 
 .projects {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: none;
 }
 
 .cardwrapper {
@@ -207,13 +196,11 @@ section {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: none;
 }
 
 .card1, .card2, .card3 {
   width: 20%;
   margin: 1rem;
-  background: none;
   color: #f7f1e3;
   height: 25rem;
   margin: 0 3rem;
@@ -276,7 +263,6 @@ section {
   align-content: center;
   margin-top: 1.5rem;
   padding-top: 2rem;
-  background: none;
 }
 
 .footer h2 {
@@ -396,25 +382,6 @@ section {
   height: 0%;
 }
 
-@media screen and (max-width: 800px) {
-    .card1 .card1head {
-      padding: .06rem;
-    }
-
-    .card1, .card2, .card3 {
-      width: 25%;
-      margin: 1rem;
-    }
-
-    .about h2 {
-    margin-bottom: .6rem;
-    }
-
-    .about p {
-      margin: .5rem 6.7rem;
-    }
-  }
-
 @media screen and (max-width: 600px) {
 
   .projects {
@@ -475,14 +442,14 @@ section {
 
 @media screen and (max-width: 420px) {
   .projects {
-    height: 170vh;
+    height: 235vh;
   }
 }
 
 @media screen and (max-width: 400px) {
 
   .projects {
-    height: 170vh;
+    height: 270vh;
   }
 
   .navbar ul {
@@ -502,16 +469,19 @@ section {
   }
 
   .about h2 {
+    margin-top: 2rem;
     font-size: 1.8rem;
   }
 
   .about p {
     font-size: .9rem;
+    background: rgba(254, 251, 246, .8);
+    padding: 0 1.5rem;
   }
 
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
 
   .about p {
     margin: .5rem 16rem;
@@ -520,12 +490,35 @@ section {
   .footer h2 {
     margin: 1rem 2rem;
   }
-}
 
-@media screen and (max-width: 325px) {
-
-  .card1, .card2, .card3 {
-    margin-bottom: 6rem;
+  .author .webdev .authorpres {
+    animation-name: intro;
+    }
+    @keyframes intro {
+      from {
+        margin-right: 25px;
+      }
+      to {
+        margin-right: 10px;
+      }
+    }
   }
 
+@media screen and (max-width: 321px) {
+
+  .projects {
+    height: 300vh;
+  }
+
+  .card1, .card2, .card3 {
+    margin-bottom: 4rem;
+  }
+
+  .about h2 {
+    margin-top: 5rem;
+  }
+
+  .footer h2 {
+    margin-top: -3.5rem;
+  }
 }
